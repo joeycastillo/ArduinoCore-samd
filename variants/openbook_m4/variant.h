@@ -99,6 +99,7 @@ extern "C"
 #define PIN_A8               (PIN_A0 + 8)
 #define PIN_A9               (PIN_A0 + 9)
 #define PIN_A10              54ul
+#define PIN_A11              50ul
 
 #define PIN_DAC0             PIN_A0
 #define PIN_DAC1             PIN_A1
@@ -154,7 +155,11 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
   // Internal SPI for E-Paper
 #define PIN_SPI1_MOSI         (41u)
 #define PIN_SPI1_SCK          (42u)
+#if defined(OPEN_BOOK_REV_1_2_3)
 #define PIN_SPI1_MISO         (43u)
+#else
+#define PIN_SPI1_MISO         (29u) // NOT_A_PIN
+#endif
 #define PERIPH_SPI1           sercom4
 #define PAD_SPI1_TX           SPI_PAD_3_SCK_1
 #define PAD_SPI1_RX           SERCOM_RX_PAD_0
