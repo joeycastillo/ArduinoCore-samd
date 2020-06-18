@@ -98,7 +98,7 @@ extern "C"
 #define PIN_A7               (PIN_A0 + 7)
 #define PIN_A8               (PIN_A0 + 8)
 #define PIN_A9               (PIN_A0 + 9)
-#define PIN_A10              54ul
+#define PIN_A10              53ul
 #define PIN_A11              50ul
 
 #define PIN_DAC0             PIN_A0
