@@ -109,7 +109,7 @@ const PinDescription g_APinDescription[]=
 
   { PORTB, 31, PIO_DIGITAL, PIN_ATTR_DIGITAL, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_15 },  // D48 button clock OR mic shutdown on rev 4
   { PORTB, 30, PIO_DIGITAL, PIN_ATTR_DIGITAL, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_14 },  // D49 button data
-  { PORTB,  0, PIO_ANALOG, PIN_ATTR_ANALOG, ADC_Channel14, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_0 },  // D50 button latch OR VBus monitor on rev 4
+  { PORTB,  0, PIO_ANALOG, PIN_ATTR_ANALOG, ADC_Channel12, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_0 },  // D50 button latch OR VBus monitor on rev 4
   
   // D51 lock button
   { PORTA, 27, PIO_INPUT_PULLUP, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_11 },
