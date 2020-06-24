@@ -1349,7 +1349,7 @@ oddly_specific_open_book_m4.build.vid=0x239A
 oddly_specific_open_book_m4.build.pid=0x8034
 oddly_specific_open_book_m4.bootloader.tool=openocd
 oddly_specific_open_book_m4.bootloader.file=featherM4/bootloader-feather_m4-v2.0.0-adafruit.5.bin
-oddly_specific_open_book_m4.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+oddly_specific_open_book_m4.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-4.5.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
 oddly_specific_open_book_m4.menu.cache.on=Enabled
 oddly_specific_open_book_m4.menu.cache.on.build.cache_flags=-DENABLE_CACHE
 oddly_specific_open_book_m4.menu.cache.off=Disabled
