@@ -115,6 +115,7 @@ static const uint8_t A7  = PIN_A7;
 static const uint8_t A8  = PIN_A8;
 static const uint8_t A9  = PIN_A9;
 static const uint8_t A10 = PIN_A10;
+static const uint8_t A11 = PIN_A11;
 
 static const uint8_t DAC0 = PIN_DAC0;
 static const uint8_t DAC1 = PIN_DAC1;
