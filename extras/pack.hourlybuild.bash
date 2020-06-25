@@ -33,7 +33,7 @@ rm -f $FILENAME
 sed -i "s/name=.*/name=SAMD Hourly Build ${BUILD_NUMBER} (${CURR_TIME})/" platform.txt
 
 cd ..
-tar --transform "s|$FOLDERNAME|samd-hourly_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
+gtar --transform "s|$FOLDERNAME|samd-hourly_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
 cd -
 
 mv ../$FILENAME .

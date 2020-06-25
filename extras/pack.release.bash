@@ -26,8 +26,8 @@ THIS_SCRIPT_NAME=`basename $0`
 rm -f samd-$VERSION.tar.bz2
 
 cd ..
-tar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf samd-$VERSION.tar.bz2 $FOLDERNAME
+gtar --transform "s|$FOLDERNAME|$FOLDERNAME-$VERSION|g"  --exclude=extras/** --exclude=.git* --exclude=.DS_Store --exclude=.idea -cjf oso-samd-$VERSION.tar.bz2 $FOLDERNAME
 cd -
 
-mv ../samd-$VERSION.tar.bz2 .
+mv ../oso-samd-$VERSION.tar.bz2 .
 

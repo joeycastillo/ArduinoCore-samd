@@ -32,7 +32,7 @@ rm -f $FILENAME
 sed -i "s/name=.*/name=SAMD Pull request #${PR_NUMBER} (Build ${BUILD_NUMBER})/" platform.txt
 
 cd ..
-tar --transform "s|$FOLDERNAME|samd-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
+gtar --transform "s|$FOLDERNAME|samd-PR${PR_NUMBER}_b${BUILD_NUMBER}|g"  --exclude=extras/** --exclude=.git* --exclude=.idea -cjf $FILENAME $FOLDERNAME
 cd -
 
 mv ../$FILENAME .
